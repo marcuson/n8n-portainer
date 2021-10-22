@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-portainer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n node to interact with Portainer.",
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://github.com/marcuson/n8n-portainer",
