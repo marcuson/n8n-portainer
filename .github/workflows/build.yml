@@ -1,4 +1,4 @@
-name: Build library
+name: Build and release library
 
 on:
   push:
@@ -27,10 +27,10 @@ jobs:
         npm run build
         npm pack
         
-    # - uses: "marvinpinto/action-automatic-releases@latest"
-    #   with:
-    #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-    #     prerelease: false
-    #     draft: false
-    #     files: |
-    #       *.tgz
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        draft: false
+        files: |
+          *.tgz
