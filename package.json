@@ -13,14 +13,15 @@
     "url": "git+https://github.com/marcuson/n8n-portainer.git"
   },
   "scripts": {
-    "dev": "npm run watch",
-    "clean": "rimraf dist",
     "build": "npm run clean && tsc && gulp",
+    "clean": "rimraf dist",
+    "dev": "npm run watch",
     "lint": "eslint src --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --write src",
-    "watch": "tsc --watch",
-    "test": "jest"
+    "release": "standard-version",
+    "test": "jest",
+    "watch": "tsc --watch"
   },
   "files": [
     "dist",
@@ -52,6 +53,7 @@
     "n8n-workflow": "^0.11.0",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
     "ts-jest": "^24.0.2",
     "tslint": "^6.1.3",
     "typescript": "~3.5.2"
