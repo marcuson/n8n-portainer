@@ -1,7 +1,7 @@
 name: Standard version
 on:
   push:
-    branches: [test]
+    branches: [main]
 
 jobs:
   standardversion:
